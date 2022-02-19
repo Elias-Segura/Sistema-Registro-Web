@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+
+    font: 11px Tahoma;
+}
+
+
+.element{
+  margin:auto;
+}
+
+
+.center{
+  top: 0px;
+
+
+  margin: auto;
+
+  display:absolute;
+width:800px;
+}
+
+.bgimg6{
+ 	background-image: url("../images/lapiz.png");
+
+        background-repeat: no-repeat;
+ 	background-position: center;
+}
+.bgimg5{
+ 	background-image: url("../images/mas.png");
+
+        background-repeat: no-repeat;
+ 	background-position: center;
+	border-style: none;
+}
+
+.bgimg4{
+ 	background-image: url("../images/regresar.png");
+        background-repeat: no-repeat;
+
+ 	background-position: center;
+
+
+}
+
+.bgimg3 {
+        background-image: url("../images/lupa.png");
+        background-repeat: no-repeat;
+
+ 	background-position: center;
+    }
+.bgimg2 {
+        background-image: url("../images/basura.png");
+        background-repeat: no-repeat;
+
+ 	background-position: center;
+    }
+
+
+.bgimg {
+        background-image: url("../images/lapiz.png");
+        background-repeat: no-repeat;
+
+ 	background-position: center;
+    }
+
+
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 5px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.form-inline button {
+  padding: 7px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+}
+
+.form-inline button:hover {
+  background-color: royalblue;
+}
+
+/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+h1 {
+    font: bold 32px Times;
+    color: #666;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#container {
+    width: 700px;
+    margin: 10px auto;
+}
+
+.mGrid {
+    width: 100%;
+    background-color: #fff;
+    margin: 5px 0 10px 0;
+    border: solid 1px #525252;
+    border-collapse: collapse;
+}
+
+    .mGrid td {
+        padding: 2px;
+        border: solid 1px #c1c1c1;
+        color: #717171;
+    }
+
+    .mGrid th {
+        padding: 4px 2px;
+        color: #fff;
+        background: #424242 url(grd_head.png) repeat-x top;
+        border-left: solid 1px #525252;
+        font-size: 0.9em;
+    }
+
+    .mGrid .alt {
+        background: #fcfcfc url(grd_alt.png) repeat-x top;
+    }
+
+    .mGrid .pgr {
+        background: #424242 url(grd_pgr.png) repeat-x top;
+    }
+
+        .mGrid .pgr table {
+            margin: 5px 0;
+        }
+
+        .mGrid .pgr td {
+            border-width: 0;
+            padding: 0 6px;
+            border-left: solid 1px #666;
+            font-weight: bold;
+            color: #fff;
+            line-height: 12px;
+        }
+
+        .mGrid .pgr a {
+            color: #666;
+            text-decoration: none;
+        }
+
+            .mGrid .pgr a:hover {
+                color: #000;
+                text-decoration: none;
+            }

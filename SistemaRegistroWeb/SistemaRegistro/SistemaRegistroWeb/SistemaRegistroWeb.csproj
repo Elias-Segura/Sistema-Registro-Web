@@ -1,0 +1,259 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{924E4502-CB1E-40C6-A297-F0A323C81049}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SistemaRegistroWeb</RootNamespace>
+    <AssemblyName>SistemaRegistroWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44342</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CapaConexion">
+      <HintPath>..\Bibliotecas\CapaConexion.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaIntegracion">
+      <HintPath>..\Bibliotecas\CapaIntegracion.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaLogica">
+      <HintPath>..\Bibliotecas\CapaLogica.dll</HintPath>
+    </Reference>
+    <Reference Include="FontAwesome, Version=1.0.5578.25903, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome-ASP.NET.1.0.5578.25903\lib\net451\FontAwesome.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\sweetalert\bootstrap-sweetalert.png" />
+    <Content Include="Content\sweetalert\docs.css" />
+    <Content Include="Content\sweetalert\sweet-alert.css" />
+    <Content Include="Content\sweetalert\thumbs-up.jpg" />
+    <Content Include="frmCaso.aspx" />
+    <Content Include="frmCiclo.aspx" />
+    <Content Include="frmCodigo.aspx" />
+    <Content Include="frmDetalleCaso.aspx" />
+    <Content Include="frmDocumento.aspx" />
+    <Content Include="frmEmpleado.aspx" />
+    <Content Include="frmHistorialData.aspx" />
+    <Content Include="frmDepartamento.aspx" />
+    <Content Include="frmIdioma.aspx" />
+    <Content Include="frmMenu.aspx" />
+    <Content Include="frmOrganizacion.aspx" />
+    <Content Include="frmTramite.aspx" />
+    <Content Include="frmUsuario.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Login.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmCaso.aspx.cs">
+      <DependentUpon>frmCaso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCaso.aspx.designer.cs">
+      <DependentUpon>frmCaso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCiclo.aspx.cs">
+      <DependentUpon>frmCiclo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCiclo.aspx.designer.cs">
+      <DependentUpon>frmCiclo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCodigo.aspx.cs">
+      <DependentUpon>frmCodigo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCodigo.aspx.designer.cs">
+      <DependentUpon>frmCodigo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDetalleCaso.aspx.cs">
+      <DependentUpon>frmDetalleCaso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDetalleCaso.aspx.designer.cs">
+      <DependentUpon>frmDetalleCaso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDocumento.aspx.cs">
+      <DependentUpon>frmDocumento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDocumento.aspx.designer.cs">
+      <DependentUpon>frmDocumento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmpleado.aspx.cs">
+      <DependentUpon>frmEmpleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmpleado.aspx.designer.cs">
+      <DependentUpon>frmEmpleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmHistorialData.aspx.cs">
+      <DependentUpon>frmHistorialData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmHistorialData.aspx.designer.cs">
+      <DependentUpon>frmHistorialData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDepartamento.aspx.cs">
+      <DependentUpon>frmDepartamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDepartamento.aspx.designer.cs">
+      <DependentUpon>frmDepartamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmIdioma.aspx.cs">
+      <DependentUpon>frmIdioma.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmIdioma.aspx.designer.cs">
+      <DependentUpon>frmIdioma.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.aspx.cs">
+      <DependentUpon>frmMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmMenu.aspx.designer.cs">
+      <DependentUpon>frmMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrganizacion.aspx.cs">
+      <DependentUpon>frmOrganizacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmOrganizacion.aspx.designer.cs">
+      <DependentUpon>frmOrganizacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmTramite.aspx.cs">
+      <DependentUpon>frmTramite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmTramite.aspx.designer.cs">
+      <DependentUpon>frmTramite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsuario.aspx.cs">
+      <DependentUpon>frmUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsuario.aspx.designer.cs">
+      <DependentUpon>frmUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\sweetalert\sweet-alert.less" />
+    <Content Include="Content\sweetalert\sweet-alert-combine.less" />
+    <Content Include="Content\sweetalert\sweet-alert-animations.less" />
+    <Content Include="Content\bootstrap\variables.less" />
+    <Content Include="Content\bootstrap\mixins.less" />
+    <None Include="packages.config" />
+    <Content Include="Views\Sweet\Alert.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50400</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44342/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{268E407C-0323-4D4D-A372-4FD55A0DD5AF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CapaLogica</RootNamespace>
+    <AssemblyName>CapaLogica</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Bibliotecas\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CapaConexion, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bibliotecas\CapaConexion.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LogicaNegocio\Caso.cs" />
+    <Compile Include="LogicaNegocio\Ciclo.cs" />
+    <Compile Include="LogicaNegocio\Codigo.cs" />
+    <Compile Include="LogicaNegocio\Departamento.cs" />
+    <Compile Include="LogicaNegocio\DepartamentoTipo.cs" />
+    <Compile Include="LogicaNegocio\DetalleCaso.cs" />
+    <Compile Include="LogicaNegocio\Documento.cs" />
+    <Compile Include="LogicaNegocio\Empleado.cs" />
+    <Compile Include="LogicaNegocio\Idioma.cs" />
+    <Compile Include="LogicaNegocio\Organizacion.cs" />
+    <Compile Include="LogicaNegocio\Puesto.cs" />
+    <Compile Include="LogicaNegocio\Tramite.cs" />
+    <Compile Include="LogicaNegocio\Usuario.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Servicios\ServicioCaso.cs" />
+    <Compile Include="Servicios\ServicioCiclo.cs" />
+    <Compile Include="Servicios\ServicioCodigo.cs" />
+    <Compile Include="Servicios\ServicioDepartamento.cs" />
+    <Compile Include="Servicios\ServicioDepartamentoTipo.cs" />
+    <Compile Include="Servicios\ServicioDetalleCaso.cs" />
+    <Compile Include="Servicios\ServicioDocumento.cs" />
+    <Compile Include="Servicios\ServicioEmpleado.cs" />
+    <Compile Include="Servicios\ServicioEstadoCivil.cs" />
+    <Compile Include="Servicios\ServicioGenero.cs" />
+    <Compile Include="Servicios\ServicioIdioma.cs" />
+    <Compile Include="Servicios\ServicioMedios.cs" />
+    <Compile Include="Servicios\ServicioOrganizacion.cs" />
+    <Compile Include="Servicios\ServicioPuesto.cs" />
+    <Compile Include="Servicios\ServicioRol.cs" />
+    <Compile Include="Servicios\ServicioTramite.cs" />
+    <Compile Include="Servicios\ServicioUsuario.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
